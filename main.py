@@ -21,11 +21,12 @@ app = FastAPI()
 # CORS Configuration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://super-cat-8f7f67.netlify.app"],  # allow all origins
-    allow_credentials=False,
-    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allow_origin_regex=".*", 
+    allow_credentials=True,
+    allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 
 # Directories
