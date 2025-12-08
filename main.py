@@ -24,7 +24,7 @@ app.add_middleware(
     allow_origins=["https://super-cat-8f7f67.netlify.app"],  # allow all origins
     allow_credentials=False,
     allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allow_headers=["Content-Type", "Authorization", "Accept", "*"],
+    allow_headers=["*"],
 )
 
 
